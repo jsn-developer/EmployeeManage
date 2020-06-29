@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8f6;
+}
+
+/** ヘッダーは上部に固定 */
+header {
+    width: 100%;
+    /* position:fixedで完全固定できる */
+    position: fixed;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: solid 4px #a3d36c;
+}
+
+/** header内のa要素のスタイル */
+header a {
+    font-size: large;
+    font-weight: bold;
+    color: #121212;
+    text-decoration: none;
+}
+
+.spacer {
+    height: 5em;
+}
+
+.action {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    width: 48px;
+    height: 48px;
+    background-color: orange;
+    border-radius: 50%;;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px rgba(129, 129, 129, 0.5);
+    text-decoration: none;
+}
+
+.action span {
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+main {
+    text-align: center;
+    padding-left: 8px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .card {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px rgba(129, 129, 129, 0.5);
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+/****** 編集系画面用 ******/
+
+form {
+    width:400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.form-parts input[type=text],select{
+    width: 100%;
+}
+
+.form-parts h4{
+    margin-top: 2em;;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+.form-parts input.half {
+    width: 48%;
+}
+
+input[type=text],select {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0!important;
+    border-bottom: 2px solid #a3a3a3;
+    background-color: transparent;
+    outline: none;
+    font-size: large;
+}
+
+input:focus {
+    border-bottom: 2px solid #a3d36c;
+}
+
+input[type=submit] {
+    height: 2.5em;
+    background-color: #078144;
+    color: white;
+    border: none;
+}
